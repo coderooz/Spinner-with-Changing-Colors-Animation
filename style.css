@@ -1,0 +1,47 @@
+/* Reset some default styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Center the content vertically and horizontally */
+html, body {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f0f0f0;
+}
+
+.container {
+text-align: center;
+}
+
+h1 {
+font-family: Arial, sans-serif;
+font-size: 24px;
+margin-bottom: 20px;
+}
+.loader-spinner {
+    border: 4px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite, change-colors 10s infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes change-colors {
+    0% { border-top-color: #3498db; }
+    25% { border-top-color: #e74c3c; }
+    50% { border-top-color: #2ecc71; }
+    75% { border-top-color: #f39c12; }
+    100% { border-top-color: #3498db; }
+  }
+  
